@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Godot Game Issues Organizer</title>
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Godot Game Issues Organizer</h1>
+
+  <form id="issue-form">
+    <!-- Section for inputting the Godot node tree structure -->
+    <fieldset>
+      <legend>Node Tree Structure:</legend>
+      <ul id="node-tree-list">
+        <!-- Example of a parent node with children -->
+        <!-- <li>Parent Node
+          <ul>
+            <li>Child Node</li>
+            <li>Child Node</li>
+          </ul>
+        </li> -->
+      </ul>
+      <!-- Button to add a new parent node -->
+      <button type="button" id="add-parent-node">Add Parent Node</button>
+    </fieldset>
+
+    <!-- Section for adding script files or code snippets with respective names and content -->
+    <fieldset>
+      <legend>Script(s):</legend>
+      <div>
+        <label for="script-uploads">Upload GDScript file(s):</label>
+        <input type="file" id="script-uploads" accept=".gd" multiple>
+      </div>
+      <textarea id="script-content" readonly rows="8" cols="80"></textarea>
+    </fieldset>
+
+    <!-- Section to describe issues or errors encountered within the game -->
+    <fieldset>
+      <legend>Issue(s)/Error(s):</legend>
+      <textarea id="issues" rows="8" cols="80" required></textarea>
+    </fieldset>
+
+    <!-- Section to input the expected or intended behavior of the game -->
+    <fieldset>
+      <legend>Expected Behavior:</legend>
+      <textarea id="expected-behavior" rows="8" cols="80" required></textarea>
+    </fieldset>
+
+    <button type="button" id="generate-prompt">Generate Prompt</button>
+  </form>
+</body>
+</html>

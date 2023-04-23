@@ -1,0 +1,44 @@
+body {
+  background-color: #303030;
+  color: #d6d6d6;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background-color: #424242;
+  border: 1px solid #5a5a5a;
+  color: #d6d6d6;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+button:hover {
+  background-color: #5a5a5a;
+}
+
+button:active {
+  background-color: #424242;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.nodeNameContainer {
+  display: inline;
+  padding: 3px;
+}
+
+textarea, input[type="file"] {
+  background-color: #424242;
+  color: #d6d6d6;
+  border: 1px solid #5a5a5a;
+  font-family: Arial, sans-serif;
+}
+
+textarea:focus, input[type="file"]:focus {
+  outline-color: #5a5a5a;
+}
